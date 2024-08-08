@@ -1,0 +1,61 @@
+.App {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+  background-color: #282c34;
+  overflow:auto;
+}
+
+.App-header {
+  padding: 20px;
+  color: white;
+}
+
+form {
+  margin: 20px 0;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  padding: 0;
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove default list style */
+  overflow: auto; /* Allows scrolling if content overflows */
+}
+
+li {
+  border: 2px solid whitesmoke;
+  background: #61dafb;
+  margin: 10px; /* Margin around items */
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(33.333% - 20px); /* Adjust width to fit three items per row */
+  height: 300px; /* Set a fixed height for notes */
+  box-sizing: border-box; /* Include padding and border in width and height */
+  overflow: auto; /* Allows scrolling within the li element if content overflows */
+}
+
+
+li button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
